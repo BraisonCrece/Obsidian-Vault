@@ -1,0 +1,171 @@
+{
+  "main": {
+    "id": "bfc2516bf6006765",
+    "type": "split",
+    "children": [
+      {
+        "id": "96cb2c2a83c626b2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "249a0614b80ffbe0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Ruby & Rails/RSpec.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "48059eeec24caf31",
+    "type": "split",
+    "children": [
+      {
+        "id": "4460e16226ff63c9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "cc17361665c6c01b",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "a58a11c3faa78e45",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "1955378667f4789e",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          },
+          {
+            "id": "3a41afaf6752d501",
+            "type": "leaf",
+            "state": {
+              "type": "mk-file-view",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "152abf3947b7ac4f",
+    "type": "split",
+    "children": [
+      {
+        "id": "a678d7335d337e96",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3894ccb7784aa8a0",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Ruby & Rails/RSpec.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "07fbb64df74740c2",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Ruby & Rails/RSpec.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "7ddb2b322cc3d67e",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "527ed4c7232e3578",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Ruby & Rails/RSpec.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Abrir quick switcher": false,
+      "graph:Abrir vista de gráfico": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Abrir la nota de hoy": false,
+      "templates:Insertar plantilla": false,
+      "command-palette:Abrir paleta de comandos": false
+    }
+  },
+  "active": "249a0614b80ffbe0",
+  "lastOpenFiles": [
+    "Ruby & Rails/StimulusJS/Stimulus JS.md",
+    "Ruby & Rails/Ruby.md",
+    "Ruby & Rails/Rails.md",
+    "Ruby & Rails/Métodos.md",
+    "Ruby & Rails/Consola Ruby - irb.md",
+    "bash.md",
+    "SQL.md",
+    "English Notes.md",
+    "Ruby & Rails/RSpec.md",
+    "Ruby.md"
+  ]
+}
