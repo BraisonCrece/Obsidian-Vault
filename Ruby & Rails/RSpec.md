@@ -180,5 +180,33 @@ Rack/Test proporciona una interfaz de prueba para simular solicitudes <span styl
 Es tentador comenzar a refactorizar mientras escribes tus specs. Evita esa tentación:
 Consigue que tus tests pasen primero, y luego refactoriza. De este modo, podrás usar tus specs para comprobar que la refactorización fué exitosa.
 
-## Métodos de la librería de aserciones de RSpec:
-`a_hash_including(:some => 'some', :data => 'data')` -> Devuelde true si el hash incluye esos datos.
+# Métodos de la librería de <span style='color:#20bf6b'>aserciones</span> de RSpec:
+-> **<span style='color:#8854d0'>A hash including</span>** 
+Devuelde true si el hash incluye esos datos.
+```rb
+a_hash_including(:some => 'some', :data => 'data') 
+```
+
+
+-> **<span style='color:#8854d0'>Contain exactly</span>**
+Supongamos que tenemos una colección de frutas y queremos probar que la colección contiene exactamente las frutas "manzana", "plátano" y "naranja", sin importar su orden. Podríamos hacer lo siguiente.
+```rb
+frutas = ["manzana", "naranja", "plátano"]
+expect(frutas).to contain_exactly("manzana", "plátano", "naranja")
+```
+ En este caso devolverá <span style='color:#3867d6'>true</span>
+
+# Métodos de comparación (matchers):
+lista de algunos de los matchers más comunes y útiles en RSpec para Ruby:
+
+-   **<span style='color:#fa8231'>eq</span>**: Compara dos objetos por igualdad (`==`).
+-   **<span style='color:#fa8231'>be</span>**: Compara dos objetos por identidad (`equal?`).
+-   **<span style='color:#fa8231'>be_within</span>**: Compara dos números para asegurarse de que difieren en una cantidad dentro de un margen.
+-   **<span style='color:#fa8231'>be_true</span>**, **<span style='color:#fa8231'>be_false</span>**: Compara un valor booleano a true o false.
+-   **<span style='color:#fa8231'>be_nil</span>**: Compara un valor a nil.
+-   **<span style='color:#fa8231'>match</span>**: Compara una cadena de texto con una expresión regular.
+-   **<span style='color:#fa8231'>include</span>**: Verifica si una colección incluye un elemento determinado.
+-   **<span style='color:#fa8231'>respond_to</span>**: Verifica si un objeto responde a un determinado método.
+-   **<span style='color:#fa8231'>have_attributes</span>**: Verifica si un objeto tiene atributos específicos.
+-   **<span style='color:#fa8231'>have_key</span>**: Verifica si un hash (diccionario) tiene una clave específica.
+-   **<span style='color:#fa8231'>raise_error</span>**: Verifica si se ha lanzado una excepción específica.
