@@ -13,7 +13,31 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Ruby & Rails/RSpec.md",
+                "file": "English Notes.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e99d23c299bff536",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "English Notes.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e3179d7998d194b3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Erasmus.md",
                 "mode": "source",
                 "source": false
               }
@@ -94,7 +118,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Ruby & Rails/RSpec.md",
+                "file": "English Notes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +135,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Ruby & Rails/RSpec.md",
+                "file": "English Notes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +158,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Ruby & Rails/RSpec.md"
+                "file": "English Notes.md"
               }
             }
           }
@@ -157,15 +181,22 @@
   },
   "active": "249a0614b80ffbe0",
   "lastOpenFiles": [
+    "Pasted image 20230314124438.png",
+    "Pasted image 20230314122122.png",
+    "Platzi English Course.md",
+    "English Notes.md",
+    "Erasmus.md",
+    "Pasted image 20230307162635.png",
+    "Pasted image 20230307160008.png",
+    "Ruby & Rails/RSpec.md",
+    "Pasted image 20230303155548.png",
+    "Ruby & Rails/Apuntes Susteinable Web Development with Ruby on Rails.md",
     "Ruby & Rails/StimulusJS/Stimulus JS.md",
     "Ruby & Rails/Ruby.md",
     "Ruby & Rails/Rails.md",
     "Ruby & Rails/Métodos.md",
     "Ruby & Rails/Consola Ruby - irb.md",
     "bash.md",
-    "SQL.md",
-    "English Notes.md",
-    "Ruby & Rails/RSpec.md",
-    "Ruby.md"
+    "SQL.md"
   ]
 }

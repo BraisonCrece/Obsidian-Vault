@@ -24,7 +24,7 @@ Los tres son semi-intercambiables, pero cada uno de ellos carga un enfasis difer
 • Un <span style='color:#f7b731'>spec</span> describe el comportamimento deseado de un trozo de codigo.
 • Un <span style='color:#8854d0'>ejemplo</span> describe como se pretende que sea usada una API.
 
-## <span style='color:#eb3b5a'>it</span>
+## <span style='color:#eb3b5a'>it / example</span>
 Crea un ejemplo, osea, un **test individual**
 
 ## <span style='color:#eb3b5a'>expect</span>
@@ -62,7 +62,7 @@ let(:sandwitch) { Sandwitch.new('delicious',[]) }
 
 Esta línea hará los mismo que los dos ejemplos anteriores, pero de un modo menos verboso y elegante.
 
-## <span style='color:#eb3b5a'>context()</span>
+## <span style='color:#eb3b5a'>context / describe</span>
 Es un alias de **describe**, se suele utilizar cuando el quid del test modifica lo que estamos testeando, por ejemplo:
 ```rb
 RSpec.describe "A cup of coffee" do
@@ -210,3 +210,155 @@ lista de algunos de los matchers más comunes y útiles en RSpec para Ruby:
 -   **<span style='color:#fa8231'>have_attributes</span>**: Verifica si un objeto tiene atributos específicos.
 -   **<span style='color:#fa8231'>have_key</span>**: Verifica si un hash (diccionario) tiene una clave específica.
 -   **<span style='color:#fa8231'>raise_error</span>**: Verifica si se ha lanzado una excepción específica.
+
+
+## <span style='color:#eb3b5a'>Compartir lógica entre tests</span>
+Ejemplo en código de varialbes definidas con **<span style='color:#2d98da'>let</span>**, un **<span style='color:#3867d6'>hook</span>** (que viene siendo una especie de callback), y un **<span style='color:#8854d0'>helper</span>**
+```rb
+RSpec.describe 'POST a successful expense' do
+	# let definitions
+	let(:ledger) { instance_double('ExpenseTracker::Ledger') }
+	let(:expense) { { 'some' => 'data' } }
+	# hook
+	before do
+		allow(ledger).to receive(:record)
+			.with(expense)
+			.and_return(RecordResult.new(true, 417, nil))
+	end
+	# helper method
+	def parsed_last_response
+		JSON.parse(last_response.body)
+	end
+end
+```
+
+**Shared Context** :
+Es otro modo de compartir contexto o setup para un grupo de specs.
+```rb
+RSpec.shared_context 'API helpers' do
+	include Rack::Test::Methods
+	def app
+		ExpenseTracker::API.new
+	end
+	before do
+		basic_authorize 'test_user', 'test_password'
+	end
+end
+```
+
+Una vez definido, cuando necesitemos utilizarlo, simplemente debemos hacer include en el grupo de test que queramos:
+```rb
+RSpec.describe 'Expense Tracker API', :db do
+	include_context 'API helpers'
+	# ...
+end
+```
+
+### <span style='color:#f7b731'>EJEMPLO PRÁCTICO -> SHARED_EXAMPLES</span>
+Tenemos los siguientes tests:
+```rb
+# tests/spec/uri_spec.rb
+
+require 'uri'
+RSpec.describe URI do
+	it 'parses the host' do
+		expect(URI.parse('http://foo.com/').host).to eq 'foo.com'
+	end
+	it 'parses the port' do
+		expect(URI.parse('http://example.com:9876').port).to eq 9876
+	end
+	it 'defaults the port for an http URI to 80' do
+		expect(URI.parse('http://example.com/').port).to eq 80
+	end
+	it 'defaults the port for an https URI to 443' do
+		expect(URI.parse('https://example.com/').port).to eq 443
+	end
+end
+```
+
+```rb
+# tests/spec/addressable_spec.rb
+
+require 'addressable'
+RSpec.describe Addressable do
+	it 'parses the scheme' do
+		expect(Addressable::URI.parse('https://a.com/').scheme).to eq 'https'
+	end
+	it 'parses the host' do
+		expect(Addressable::URI.parse('https://foo.com/').host).to eq 'foo.com'
+	end
+	it 'parses the port' do
+		expect(Addressable::URI.parse('http://example.com:9876').port).to eq 9876
+	end
+	it 'parses the path' do
+		expect(Addressable::URI.parse('http://a.com/foo').path).to eq '/foo'
+	end
+end
+```
+
+Como podemos apreciar, ambos tests son similares. Pues bien, podemos reducir la redundancia de código definiendo un archivo **<span style='color:#3867d6'>shared_examples.rb</span>** dentro de un directorio `support`, con el siguiente código:
+
+```rb
+# tests/spec/support/shared_examples.rb
+
+RSpec.shared_examples "a URI parsing library" do |library|
+	it "parses the scheme" do
+		expect(library.parse("https://a.com/").scheme).to eq "https"
+	end
+	it "parses the host" do
+		expect(library.parse("http://foo.com/").host).to eq "foo.com"
+	end
+	it "parses the port" do
+		expect(library.parse("http://example.com:9876").port).to eq 9876
+	end
+	it "parses the path" do
+		expect(library.parse("http://a.com/foo").path).to eq "/foo"
+	end
+end
+```
+
+En este archivo, se van a ejecutar las pruebas que son comunes a ambos test. Se define como un bloque que recibe una ''biblioteca'' por parámetro, y la sustituye por la correspondiente. El código de las pruebas ahora queda así:
+
+```rb
+# tests/spec/uri_spec.rb
+
+require "uri"
+require "support/shared_examples"
+
+RSpec.describe URI do
+	it_behaves_like "a URI parsing library", URI
+
+	it "defaults the port for an http URI to 80" do
+		expect(URI.parse("http://example.com/").port).to eq 80
+	end
+	it "defaults the port for an https URI to 443" do
+		expect(URI.parse("https://example.com/").port).to eq 443
+	end
+end
+```
+
+```rb
+# tests/spec/addressable_spec.rb
+require 'addressable'
+require 'support/shared_examples'
+
+RSpec.describe Addressable do
+	it_behaves_like 'a URI parsing library', Addressable::URI
+
+	it 'does not default the port for an http URI' do
+		expect(Addressable::URI.parse('http://example.com/').port).to eq nil
+	end
+	it 'does not default the port for an https URI' do
+		expect(Addressable::URI.parse('https://example.com/').port).to eq nil
+	end
+end
+```
+
+Fíjate en el comienzo de cada spec:
+```rb
+it_behaves_like "a URI parsing library", URI # u otra librería
+```
+Si ejecutamos las pruebas en total se ejecutan 4 (comunes) * 2, más 2 individuales de cada. 
+En total, 12 pruebas:
+![[Pasted image 20230303155548.png]]
+
