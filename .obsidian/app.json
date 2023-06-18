@@ -4,6 +4,12 @@
     "pageSize": "A4",
     "landscape": false,
     "margin": "0",
-    "downscalePercent": 100
-  }
+    "downscalePercent": 95
+  },
+  "spellcheckLanguages": [
+    "en-US",
+    "es"
+  ],
+  "promptDelete": false,
+  "attachmentFolderPath": "WhiteBox/Tickets/Flip-Flop"
 }

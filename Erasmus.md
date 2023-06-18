@@ -1,5 +1,0 @@
-- acta xustificar
-- correo confirmacion erasmus
-- tarxeta sanitaria europea
-- dni actualizado
-- 

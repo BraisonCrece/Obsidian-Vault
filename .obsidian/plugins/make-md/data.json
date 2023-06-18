@@ -1,6 +1,9 @@
 {
+  "defaultInitialization": false,
   "filePreviewOnHover": false,
+  "flowMenuEnabled": true,
   "markSans": false,
+  "blinkEnabled": true,
   "makeMenuPlaceholder": true,
   "mobileMakeBar": true,
   "inlineStyler": true,
@@ -8,49 +11,92 @@
   "inlineStylerColors": true,
   "editorFlow": true,
   "internalLinkClickFlow": true,
+  "contextEnabled": true,
   "saveAllContextToFrontmatter": false,
   "editorFlowStyle": "seamless",
   "autoOpenFileContext": false,
+  "activeView": "root",
+  "hideFrontmatter": true,
+  "activeSpace": "",
   "spacesCompactMode": false,
+  "defaultDateFormat": "MMM dd yyyy",
   "spacesEnabled": true,
   "spacesPerformance": false,
+  "collapsedTags": [],
   "enableFolderNote": true,
+  "folderIndentationLines": true,
   "revealActiveFile": false,
   "spacesStickers": true,
+  "spaceRowHeight": 29,
   "spacesDisablePatch": false,
   "folderNoteInsideFolder": true,
+  "folderNoteDefaultView": true,
   "sidebarTabs": true,
   "showRibbon": true,
   "deleteFileOption": "trash",
   "expandedFolders": {
     "/": [
+      "Ruby & Rails/RSpec",
+      "/"
+    ],
+    "Obsidian-Vault": [
+      "Arquitectura de Software/CQRS",
+      "Algoritmia",
+      "Arquitectura de Software/CQRS",
+      "WhiteBox/Gems",
+      "WhiteBox/Gems",
+      "WhiteBox/Tickets",
+      "WhiteBox/Tickets",
+      "WhiteBox/Tickets",
+      "Ruby & Rails",
+      "Ruby & Rails",
       "Ruby & Rails"
     ]
   },
   "expandedSpaces": [
-    "/",
     null,
+    "/",
+    "Obsidian-Vault",
     null
   ],
-  "folderRank": {
-    "node": "root",
-    "children": [],
-    "isFolder": true
-  },
   "openFolders": [],
   "fileIcons": [],
-  "spaces": [],
-  "pinnedSpaces": [],
+  "cachedSpaces": [
+    "Obsidian-Vault"
+  ],
   "menuTriggerChar": "/",
+  "inlineStickerMenu": true,
   "emojiTriggerChar": ":",
   "folderContextFile": "context",
   "tagContextFolder": "Context",
   "hiddenFiles": [
     "Context"
   ],
+  "lineNumbers": false,
   "hiddenExtensions": [
     "mdb"
   ],
+  "inlineBacklinks": false,
+  "inlineContext": true,
+  "inlineBacklinksExpanded": false,
+  "inlineContextExpanded": true,
+  "inlineContextSectionsExpanded": true,
+  "dataviewInlineContext": false,
+  "inlineContextNameLayout": "vertical",
+  "spacesSyncLastUpdated": "Context/spacesLastSync.log",
+  "spacesSyncTimeoutSeconds": 10,
+  "spacesAutoBackup": true,
+  "spacesAutoBackupInterval": 10,
+  "spacesAutoBackupLast": 1686928863768,
+  "spacesUseAlias": false,
+  "precreateVaultSpace": true,
+  "folderRank": {
+    "node": "root",
+    "children": [],
+    "isFolder": true
+  },
+  "spaces": [],
+  "pinnedSpaces": [],
   "vaultSort": [
     "rank",
     true

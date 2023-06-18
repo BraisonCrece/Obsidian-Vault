@@ -1,0 +1,7 @@
+El rendimiento ponderado en el tiempo (TWR, por sus siglas en inglés de Time-Weighted Return) es un método para calcular el rendimiento de una inversión que elimina el efecto de los flujos de efectivo hacia y desde la inversión. Este método de cálculo se utiliza comúnmente en el mundo financiero para comparar el rendimiento de diferentes gestores de fondos o carteras.
+
+El TWR se calcula dividiendo el valor del portafolio al final del periodo por su valor al inicio, luego se le resta 1 para obtener el rendimiento en el periodo, esto se repite para cada sub-periodo, y luego se multiplican todos los rendimientos obtenidos para obtener el TWR total.
+
+La razón por la que el TWR es útil es que no se ve afectado por la cantidad de dinero que entra o sale de la cartera en diferentes momentos. Por ejemplo, si un inversor deposita una gran suma de dinero justo antes de que el mercado caiga, una medida simple de rendimiento puede parecer peor de lo que realmente fue. Del mismo modo, si un inversor retira una gran cantidad de dinero justo antes de que el mercado suba, una medida simple de rendimiento puede parecer mejor de lo que realmente fue.
+
+<mark style='background:#4b6584'>En resumen, el rendimiento ponderado en el tiempo proporciona una medida más justa de cómo se ha comportado la inversión, independientemente de los flujos de efectivo hacia y desde la cartera</mark>.
