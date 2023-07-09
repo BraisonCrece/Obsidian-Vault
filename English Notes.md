@@ -112,3 +112,10 @@ Ejemplos:
 ## Pronunciación past simple:
 Si termina en t o d --> La '-ed' suena, a pesar de que el énfasis se hace en la otra parte del verbo.
 
+## Preguntas en past simple
+
+Did + persona / cosa + verbo INFINITIVO
+Se le puede añadir un Wh para preguntar algo más concreto...
+Where did you talk
+When did you start to tho this
+what did it do
