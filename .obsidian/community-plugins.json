@@ -1,4 +1,6 @@
 [
   "make-md",
-  "obsidian-emoji-toolbar"
+  "obsidian-emoji-toolbar",
+  "highlightr-plugin",
+  "obsidian-excalidraw-plugin"
 ]

@@ -4,17 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "37d0fb56d804f98c",
+        "id": "0b7d6dc292e9208d",
         "type": "tabs",
         "children": [
           {
-            "id": "2c74f260121e33a3",
+            "id": "fb31bafc2ab719d9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notes.md",
+                "file": "Ruby & Rails/Rails Engines.md",
                 "mode": "source",
+                "backlinks": true,
                 "source": false
               }
             }
@@ -48,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#Selectores",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -66,7 +67,15 @@
             }
           },
           {
-            "id": "3a41afaf6752d501",
+            "id": "1833890401d1995c",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          },
+          {
+            "id": "c0758880358a6adf",
             "type": "leaf",
             "state": {
               "type": "mk-file-view",
@@ -81,12 +90,11 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 316.5086555480957
   },
   "right": {
     "id": "152abf3947b7ac4f",
@@ -102,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "notes.md",
+                "file": "Ruby & Rails/Rails Engines.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "notes.md",
+                "file": "Ruby & Rails/Rails Engines.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -142,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "notes.md"
+                "file": "Ruby & Rails/Rails Engines.md"
               }
             }
           }
@@ -155,52 +163,62 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Abrir quick switcher": false,
-      "graph:Abrir vista de gráfico": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
       "canvas:Create new canvas": false,
-      "daily-notes:Abrir la nota de hoy": false,
-      "templates:Insertar plantilla": false,
-      "command-palette:Abrir paleta de comandos": false
+      "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "2c74f260121e33a3",
+  "active": "cc17361665c6c01b",
   "lastOpenFiles": [
-    "Pasted image 20230607200841.png",
-    "Pasted image 20230607200008.png",
-    "Pasted image 20230607195502.png",
-    "Algoritmia/Big O complexity.md",
-    "notes.md",
-    "Algoritmia/Big O - Code Exaples.md",
-    "Algoritmia/big-o-chart-tutorial-bazar-aymptotic-notations-1.png",
-    "Algoritmia/big-o-chart-tutorial-bazar-aymptotic-notations-1.png.crdownload",
-    "WhiteBox/Profile Area/Credentials.md",
-    "WhiteBox/Profile Area",
-    "WhiteBox/Profile Area/Depot data.md",
-    "WhiteBox/Profile Area/Personal data.md",
-    "WhiteBox/Profile Area/Tax data (Spanish).md",
-    "WhiteBox/Profile Area/Tax Data.md",
-    "CARTA NAVEGACION.md",
-    "Untitled.md",
-    "WhiteBox",
-    "images/Pasted image 20230314124438.png",
-    "esquema_CartasHoteles.jpeg",
-    "Proxecto CartaRestaurantes Andorra/Proxecto.md",
-    "Proxecto CartaRestaurantes Andorra",
-    "English Notes.md",
-    "images/Pasted image 20230314122122.png",
-    "Platzi English Course.md",
-    "Erasmus.md",
-    "images/Pasted image 20230307162635.png",
-    "images/Pasted image 20230307160008.png",
-    "Ruby & Rails/RSpec.md",
-    "images/Pasted image 20230303155548.png",
-    "Ruby & Rails/Apuntes Susteinable Web Development with Ruby on Rails.md",
-    "Ruby & Rails/StimulusJS/Stimulus JS.md",
-    "Ruby & Rails/Ruby.md",
-    "Ruby & Rails/Rails.md",
-    "Ruby & Rails/Métodos.md",
-    "Ruby & Rails/Consola Ruby - irb.md",
-    "bash.md",
-    "SQL.md"
+    "Ruby & Rails/Zeitwerk.md",
+    "Ruby & Rails/Rails Engines.md",
+    "Ruby & Rails/Apuntes Varios.md",
+    "Ruby & Rails/Ruby & Rails.md",
+    "WhiteBox/Tickets/Flip-Flop/HTTP Catching.md",
+    "WhiteBox/Tickets/Flip-Flop/HTTP_catching_featureFlag_diagram 1.svg",
+    "WhiteBox/Tickets/Flip-Flop/Flip-Flop.md",
+    "WhiteBox/Tickets/Flip-Flop/HTTP_catching_featureFlag_diagram.svg",
+    "WhiteBox/Tickets/Flip-Flop/Pasted image 20230616131906.png",
+    "Arquitectura de Software/Arquitectura Exagonal .md",
+    "Arquitectura de Software/Arquitectura de Software.md",
+    "WhiteBox/Tickets/Tickets.md",
+    "WhiteBox/Tickets/Flip-Flop",
+    "images/Pasted image 20230614180513.png",
+    "WhiteBox/Gems/Flip-Flop .md",
+    "WhiteBox/Gems/Flipper.md",
+    "images/Pasted image 20230615113403.png",
+    "images/Pasted image 20230615113300.png",
+    "images/Pasted image 20230615113237.png",
+    "images/Pasted image 20230615105139.png",
+    "WhiteBox/Gems/Gems.md",
+    "WhiteBox/Notes/Gem vs Rails Engine.md",
+    "WhiteBox/Tickets",
+    "images/Pasted image 20230614183517.png",
+    "images/Pasted image 20230614183301.png",
+    "thread safe.md",
+    "WhiteBox/Notes/Thread save.md",
+    "Flip-Flop.md",
+    "Flipflop.md",
+    "WhiteBox/Notes/CQRS and Event Sourcing.md",
+    "Excalidraw/Drawing 2023-06-10 12.31.09.excalidraw.md",
+    "Excalidraw/Drawing 2023-06-10 12.36.16.excalidraw.md",
+    "Excalidraw/Excalidraw.md",
+    "WhiteBox/DockerCompose - Services/DockerCompose - Services.md",
+    "Arquitectura de Software/CQRS/Command Query Responsibility Segregation.md",
+    "WhiteBox/WhiteBox.md",
+    "images/images.md",
+    "Arquitectura de Software/Active Record vs DataMapper.md",
+    "Arquitectura de Software/CQRS",
+    "Arquitectura de Software/Testing",
+    "Arquitectura de Software",
+    ".md",
+    "Context/spacesLastSync.log",
+    "Context",
+    "WhiteBox/Gems",
+    "WhiteBox/RabbitMQ RPC - Proposed Model.png.crdownload"
   ]
 }
