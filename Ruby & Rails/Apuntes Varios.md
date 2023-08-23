@@ -72,3 +72,53 @@ end
 
 Así no habrá que meter cada aserción dentro de un bloque VCR. 🙂
 
+# <span style='color:#eb3b5a'>const_missing</span>
+```rb
+class Object
+	# Cuando se llama a una constante no definida (como un controlador)
+	# Ruby llama al método const_missing 
+    def self.const_missing(c) 
+        # lo que estamos haciendo es sobreescribiendo el método const_missing
+        # para que se convierta a snake_case y se require el fichero!
+        # VERY CLEVER!
+        require Fresh.to_underscore(c.to_s) 
+        
+        # Luego, cuando tenemos acceso al código del Controlador o lo que sea
+        # simplemente llamamos al método invocado :)
+        Object.const_get(c) 
+    end 
+end
+```
+
+Este tipo de código es más común en algunos marcos de trabajo de Ruby, como Rails, donde puedes tener muchos archivos de clase, y podría no ser eficiente cargarlos todos en la memoria al inicio de tu aplicación. Esto se conoce como "carga perezosa" o "autocarga", donde solo cargas las clases (controladores, modelos, etc.) cuando realmente las necesitas.
+
+Podrías tener un sistema donde los nombres de los controladores correspondan a los nombres de los archivos. Por ejemplo, puedes tener un controlador de usuarios en un archivo llamado `users_controller.rb`:
+
+```ruby
+# En users_controller.rb
+class UsersController
+  def index
+    # Muestra todos los usuarios
+  end
+end
+```
+
+Ahora, en tu código, puedes querer usar `UsersController`:
+
+```ruby
+def handle_request
+  controller = UsersController
+  controller.index
+end
+```
+
+Pero no has requerido el archivo `users_controller.rb` en ninguna parte. Normalmente, Ruby lanzaría un error `NameError`, diciendo que no conoce una constante llamada `UsersController`.
+
+Sin embargo, si tienes el método `const_missing` definido como en tu ejemplo, en lugar de lanzar un error, Ruby llamaría a `const_missing` con el nombre de la constante desconocida.
+
+Entonces, en este caso, `c` sería `:UsersController`. `Fresh.to_underscore(c.to_s)` convertiría esto en `users_controller`, y luego `require` intentaría cargar el archivo `users_controller.rb`.
+
+Como ese archivo define `UsersController`, ahora cuando llamas a `Object.const_get(c)`, puedes obtener la referencia a la clase `UsersController`, y todo funciona sin errores.
+
+Este enfoque puede facilitar la organización de tu código y la eficiencia de la memoria, pero también puede hacer que tu código sea más difícil de depurar, porque los errores de carga se retrasan hasta que realmente intentas usar una clase, en lugar de cuando inicias tu aplicación. Y, si tienes errores de mecanografiado en los nombres de las clases, puedes terminar cargando archivos incorrectos o inesperados.
+
