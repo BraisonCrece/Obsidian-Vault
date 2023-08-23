@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "System design/Authentication system.md",
+                "file": "Ruby & Rails/Apuntes Varios.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -30,8 +30,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -93,8 +92,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "horizontal",
@@ -114,7 +112,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "System design/Authentication system.md",
+                "file": "Ruby & Rails/Apuntes Varios.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -131,7 +129,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "System design/Authentication system.md",
+                "file": "Ruby & Rails/Apuntes Varios.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -154,7 +152,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "System design/Authentication system.md"
+                "file": "Ruby & Rails/Apuntes Varios.md"
               }
             }
           }
@@ -176,8 +174,11 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "c0758880358a6adf",
+  "active": "cc17361665c6c01b",
   "lastOpenFiles": [
+    "WhiteBox/WhiteBox.md",
+    "System design/Authentication system.md",
+    "WhiteBox/Tickets/Tickets.md",
     "notes.md",
     "esquema_CartasHoteles.jpeg",
     "WhiteBox/Profile Area/Tax data (Spanish).md",
@@ -198,12 +199,10 @@
     "Algoritmia/Big O complexity.md",
     "Algoritmia/Big O - Code Exaples.md",
     "Algoritmia/Asymptotic.md",
-    "System design/Authentication system.md",
     "System design",
     "MAKE actions.md",
     "WhiteBox/Tickets/Hide_and_seek/Hide and seek .md",
     "WhiteBox/Tickets/Hide_and_seek",
-    "WhiteBox/Tickets/Tickets.md",
     "WhiteBox/Tickets/Flip-Flop/Conclusions - Flipflop Spike ticket.md",
     "WhiteBox/Tickets/Flip-Flop/HTTP Catching.md",
     "WhiteBox/Tickets/Flip-Flop/conclusions Rails Engine.md",
@@ -213,7 +212,6 @@
     "WhiteBox/Notes/Apuntes.md",
     "WhiteBox/RabbitMQ RPC - Proposed Model.png",
     "Ruby & Rails/Rails Engines.md",
-    "Ruby & Rails/Zeitwerk.md",
     "WhiteBox/Tickets/Flip-Flop/HTTP_catching_featureFlag_diagram 1.svg",
     "WhiteBox/Tickets/Flip-Flop/HTTP_catching_featureFlag_diagram.svg",
     "WhiteBox/Tickets/Flip-Flop/Pasted image 20230616131906.png",

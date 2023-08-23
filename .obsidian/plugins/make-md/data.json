@@ -40,20 +40,6 @@
       "/"
     ],
     "Obsidian-Vault": []
-    "/": ["Ruby & Rails/RSpec", "/"],
-    "Obsidian-Vault": [
-      "Arquitectura de Software/CQRS",
-      "Algoritmia",
-      "Arquitectura de Software/CQRS",
-      "WhiteBox/Gems",
-      "WhiteBox/Gems",
-      "WhiteBox/Tickets",
-      "WhiteBox/Tickets",
-      "WhiteBox/Tickets",
-      "Ruby & Rails",
-      "Ruby & Rails",
-      "Ruby & Rails"
-    ]
   },
   "expandedSpaces": [
     null,
@@ -63,15 +49,21 @@
   ],
   "openFolders": [],
   "fileIcons": [],
-  "cachedSpaces": ["Obsidian-Vault"],
+  "cachedSpaces": [
+    "Obsidian-Vault"
+  ],
   "menuTriggerChar": "/",
   "inlineStickerMenu": true,
   "emojiTriggerChar": ":",
   "folderContextFile": "context",
   "tagContextFolder": "Context",
-  "hiddenFiles": ["Context"],
+  "hiddenFiles": [
+    "Context"
+  ],
   "lineNumbers": false,
-  "hiddenExtensions": ["mdb"],
+  "hiddenExtensions": [
+    "mdb"
+  ],
   "inlineBacklinks": false,
   "inlineContext": true,
   "inlineBacklinksExpanded": false,
@@ -83,7 +75,7 @@
   "spacesSyncTimeoutSeconds": 10,
   "spacesAutoBackup": true,
   "spacesAutoBackupInterval": 10,
-  "spacesAutoBackupLast": 1686928863768,
+  "spacesAutoBackupLast": 1692803073706,
   "spacesUseAlias": false,
   "precreateVaultSpace": true,
   "folderRank": {
@@ -93,5 +85,8 @@
   },
   "spaces": [],
   "pinnedSpaces": [],
-  "vaultSort": ["rank", true]
+  "vaultSort": [
+    "rank",
+    true
+  ]
 }
