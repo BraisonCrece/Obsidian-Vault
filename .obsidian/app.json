@@ -6,7 +6,11 @@
     "margin": "0",
     "downscalePercent": 95
   },
+<<<<<<< HEAD
   "spellcheckLanguages": ["en-US", "es"],
+=======
+  "spellcheckLanguages": null,
+>>>>>>> a4a9bdf (feat: more notes :))
   "promptDelete": false,
   "attachmentFolderPath": "WhiteBox/Tickets/Flip-Flop"
 }

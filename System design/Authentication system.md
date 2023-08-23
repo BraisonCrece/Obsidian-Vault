@@ -1,0 +1,3 @@
+- Users are able to register
+- Users are able to log-in
+- Users can sign-out

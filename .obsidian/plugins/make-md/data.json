@@ -35,6 +35,11 @@
   "showRibbon": true,
   "deleteFileOption": "trash",
   "expandedFolders": {
+    "/": [
+      "Ruby & Rails/RSpec",
+      "/"
+    ],
+    "Obsidian-Vault": []
     "/": ["Ruby & Rails/RSpec", "/"],
     "Obsidian-Vault": [
       "Arquitectura de Software/CQRS",
@@ -50,7 +55,12 @@
       "Ruby & Rails"
     ]
   },
-  "expandedSpaces": [null, "/", "Obsidian-Vault", null],
+  "expandedSpaces": [
+    null,
+    "/",
+    "Obsidian-Vault",
+    null
+  ],
   "openFolders": [],
   "fileIcons": [],
   "cachedSpaces": ["Obsidian-Vault"],
